@@ -1,8 +1,10 @@
 from setuptools import setup, Extension
 from Cython.Build import cythonize
+import numpy
 
 extensions = [
-    Extension("simfit.hello", ["simfit/hello.pyx"]) 
+    Extension("simfit.hello", ["simfit/hello.pyx"]),
+    Extension("simfit.simulate", ["simfit/simulate.pyx"], include_dirs=[numpy.get_include()])
 ]
 
 setup(

@@ -1,2 +1,2 @@
 def say_hello_to(name):
-    print(f"Hello {name} from Simfit!")
+    print(f"Hello {name} from Cython Simfit!")
