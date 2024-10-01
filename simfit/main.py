@@ -1,9 +1,7 @@
-from simfit.hello import say_hello_to
 from simfit.simulate import sim1DE
 import numpy as np
 
 def main() -> int:
-    say_hello_to("user")
     tsize : int     = 512
     fsize : int     = 1024
     ctsize : int    = 0

@@ -3,13 +3,12 @@ from Cython.Build import cythonize
 import numpy
 
 extensions = [
-    Extension("simfit.hello", ["simfit/hello.pyx"]),
     Extension("simfit.simulate", ["simfit/simulate.pyx"], include_dirs=[numpy.get_include()])
 ]
 
 setup(
     name='NMR SimFit',
-    version="0.0.1",
+    version="0.1.0",
     description="A general-purpose spectral fitting tool",
     ext_modules=cythonize(extensions, language_level = "3"),
     entry_points={
