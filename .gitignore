@@ -566,3 +566,4 @@ FodyWeavers.xsd
 # Other Ignores
 simtimend.c
 !__init__.pyd
+demo/*
